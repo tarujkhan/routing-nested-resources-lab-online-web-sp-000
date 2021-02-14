@@ -6,3 +6,4 @@ end
 resources :songs, only: [:index, :show, :new, :create, :edit, :delete]
 
 root 'posts#index'
+end
