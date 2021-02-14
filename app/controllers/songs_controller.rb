@@ -15,6 +15,8 @@ end
     if Artist.Song.find(params[:format])
       flash[:notice] = "Song not found"
       redirect_to 'songs#index'
+    else
+
   end
 end
   def new
