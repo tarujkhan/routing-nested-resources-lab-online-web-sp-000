@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 end
 
 resources :songs, only: [:index, :show, :new, :create, :edit, :delete]
+end
 
 #root 'songs#index'
 #end
