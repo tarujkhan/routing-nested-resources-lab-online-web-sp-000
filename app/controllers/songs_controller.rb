@@ -3,7 +3,7 @@ class SongsController < ApplicationController
   def index
     #pry
     if !Artist.find_by(id: params[:id])
-      byebug
+      
     flash[:notice] = "Artist not found"
     redirect_to artists_path(@artist)
   else
