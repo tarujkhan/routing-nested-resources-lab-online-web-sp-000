@@ -12,7 +12,7 @@ end
       flash[:notice] = "Song not found"
       redirect_to 'songs#index'
   end
-end 
+end
   def new
     @song = Song.new
   end
