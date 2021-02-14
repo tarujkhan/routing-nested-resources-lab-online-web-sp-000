@@ -2,7 +2,7 @@ require 'pry'
 class SongsController < ApplicationController
   def index
     #pry
-    if Artist.find_by(params[:id])
+    if Artist.find_by(id: params[:id])
     flash[:notice] = "Artist not found"
     redirect_to artist_path(@artist)
   else
