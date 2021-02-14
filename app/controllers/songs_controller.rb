@@ -2,7 +2,7 @@ require 'pry'
 class SongsController < ApplicationController
   def index
     pry
-    if params[:artist_id]
+    if params[:artist_id].include?
     flash[:notice] = "Artist not found"
     redirect_to artist_path(@artist)
   else
