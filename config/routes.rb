@@ -5,5 +5,5 @@ end
 
 resources :songs, only: [:index, :show, :new, :create, :edit, :delete]
 
-root 'songs#index'
+#root 'songs#index'
 end
